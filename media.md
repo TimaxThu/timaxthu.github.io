@@ -1,7 +1,7 @@
 ---
 layout: article
-title: Plog
-key: page-plog
+title: media
+key: page-media
 mode: immersive
 header:
   theme: dark
@@ -13,7 +13,7 @@ article_header:
     gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
     src: https://github.com/Yuleii/Yuleii.github.io/raw/master/pictures/plog_cover.JPG
 sidebar:
-    nav: plog
+    nav: media
 ---
 
 <!--more-->
