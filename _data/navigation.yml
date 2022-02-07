@@ -63,17 +63,17 @@ header:
 
 
 media:
-  - title:      vedio # 
+  - title:      视频
     children:
-      - title:  entertain # 科普&日常
+      - title:  科普&日常
         url:    /media/entertain
-      - title:  knowledge # 专业知识
+      - title:  专业知识
         url:    /media/knowledge
-      - title:  likes # 点赞视频列表
+      - title:  点赞视频列表
         url:    /media/like
-  - title:      album # 
+  - title:      图片
     children:
-      - title:  school # 日常拍
+      - title:  日常拍
         url:    /media/school
-      - title:  girl # 得不到的永远在躁动
+      - title:  得不到的永远在躁动
         url:    /media/girl
