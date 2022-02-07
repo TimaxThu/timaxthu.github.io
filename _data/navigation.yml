@@ -24,6 +24,14 @@ header:
       # @end locale config
     url: /archive.html
 
+  - title:      Media
+    url:        /media.html
+    key:        media
+
+  - title:      Moments
+    url:        /moments.html
+    key:        moments
+
   - titles:
       # @start locale config
       en      : &EN       About
@@ -48,3 +56,24 @@ header:
       fr-LU   : *FR
       # @end locale config
     url: /about.html
+
+
+  - title:      GitHub
+    url:        https://github.com/TimaxThu/timaxthu.github.io
+
+
+media:
+  - title:      视频
+    children:
+      - title:  科普&日常
+        url:    /media/entertain
+      - title:  专业知识
+        url:    /media/knowledge
+      - title:  点赞视频列表
+        url:    /media/like
+  - title:      图片
+    children:
+      - title:  日常拍
+        url:    /media/school
+      - title:  得不到的永远在躁动
+        url:    /media/girl
