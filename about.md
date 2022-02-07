@@ -34,7 +34,7 @@ key: page-about
 
 ### Timax
 
-![about](https://github.com/TimaxThu/timaxthu.github.io/raw/master/pictures/about.jpg){:.shadow.rounded width="250"}
+![about](https://raw.githubusercontent.com/TimaxThu/timaxthu.github.io/master/pictures/about.jpg){:.shadow.rounded width="250"}
 
 你好，我是一名**计算机**相关专业的本科生。同时，我对**金融**相关的知识也较感兴趣。我的[博客](https://timaxthu.github.io/)会分享一些文章，内容包括：
 
@@ -45,3 +45,6 @@ key: page-about
 
 
 
+
+
+如果你需要联系我，可以给我发`邮件`。
