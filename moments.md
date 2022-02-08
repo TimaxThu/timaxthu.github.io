@@ -33,5 +33,7 @@ key: page-about
 * 20220208
 * 今天早上看了冰冰姐的2022新年视频，还是很喜欢冰冰姐！
 
+<iframe src="//player.bilibili.com/player.html?aid=295177311&bvid=BV1EF411i7eg&cid=472545245&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 ---
 
