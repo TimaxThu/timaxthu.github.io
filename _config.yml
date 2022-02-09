@@ -201,6 +201,11 @@ exclude:
   - /test
   - /vendor
 
+collections:
+  media:
+    output: true
+
+
 defaults:
   ## posts
   - scope:

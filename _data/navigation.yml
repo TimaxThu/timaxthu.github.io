@@ -66,9 +66,9 @@ media:
   - title:      视频
     children:
       - title:  科普&日常
-        url:    /media/entertain.html
+        url:    /media/entertain
       - title:  专业知识
-        url:    /media/knowledge.html
+        url:    /media/knowledge
       - title:  点赞视频列表
         url:    /media/like
   - title:      图片
