@@ -65,9 +65,9 @@ header:
 media:
   - title:      视频
     children:
-      - title:  科普&日常
-        url:    /media/1.1-entertain.html
-      - title:  专业知识
+      - title:  科普&日常 
+        url:    /media/entertain
+      - title:  Knowledge
         url:    /media/knowledge
       - title:  点赞视频列表
         url:    /media/like
