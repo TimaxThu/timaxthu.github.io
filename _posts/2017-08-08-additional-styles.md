@@ -40,10 +40,7 @@ Success!
 
 [Documentation](https://tianqi.name/jekyll-TeXt-theme/docs/en/additional-styles)
 
-<font size = 10, color = red> hello world!</font>
-
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=536098013&auto=0&height=66"></iframe>
-
 
 
 ## Alert
