@@ -2,7 +2,7 @@
 layout: article
 title: 用 Github pages 和 Jekyll 搭建博客
 key: 20200609
-tags: Jekyll Github
+tags: Jekyll Github TeXt
 pageview: false
 modify_date: 2020-06-12
 aside:
