@@ -9,23 +9,29 @@ aside:
   toc: true
 ---
 
-
 搭建本博客的经验
+
+注意：本篇文章转载于[Yuleii的博客——**Yulei's Sandbox**](https://yuleii.github.io/2020/06/09/build-blog-with-github-pages-and-jekyll.html)，**并进行了补充**。本文章仅用于自己学习，若有侵权行为，请通过邮箱联系我，我会立刻将文章删除。
+{:.warning}
 
 <!--more-->
 
 
+
+
 ## 创建gitpage仓库
-在github上创建一个新的仓库，Repository name 填your_user_name.github.io, 例如我的仓库名是 Yuleii.github.io。创建成功后，在浏览器里输入 https://Yuleii.github.io/ 这个url就可以访问了。
+在github上创建一个新的仓库，Repository name 填your_user_name.github.io, 例如我的仓库名是 yuleii.github.io。创建成功后，在浏览器里输入 https://yuleii.github.io/ 这个url就可以访问了。
 
 ## 选一个主题
 ### 主题网站
 [jekyllthemes](http://jekyllthemes.org/)有很多免费主题可以挑选。我最喜欢[jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme)这个主题，页面简洁，有很多个性化的配置，还有非常详细的中英文档。
 
 ### 主题下载
-我的办法是把主题克隆到本地，删除原有的git文件，再与自己的仓库关联起来，但建议用[jekyll-TeXt-theme中文文档](https://tianqi.name/jekyll-TeXt-theme/docs/zh/quick-start)推荐的fork方式。
+我的办法是把主题克隆到本地，删除原有的git文件，再与自己的仓库关联起来（但建议用[jekyll-TeXt-theme中文文档](https://tianqi.name/jekyll-TeXt-theme/docs/zh/quick-start)推荐的fork方式。）
 
 ## 安装Jekyll本地编译环境
+> 配置本地环境我试了很多遍，甚至把我的Mac恢复了出厂设置，但是最终还是失败了。原因大概是因为ruby或jekyll版本不匹配的问题。
+
 ### 安装 RubyGems
 
 一般macos已经有RubyGems环境了，所以只需要检查一下版本
@@ -59,7 +65,7 @@ $ bundle exec jekyll serve
 ### Jekyll 目录结构
 jekyll目录结构主要包含如下目录：
 - _posts 博客内容
-- _pages 其他需要生成的网页，如About页
+- （_pages 其他需要生成的网页，如About页）
 - _layouts 网页排版模板
 - _includes 被模板包含的HTML片段，_config.yml中修改位置assets 辅助资源 css布局 js脚本 图片等
 - _data 动态数据
@@ -77,6 +83,9 @@ jekyll目录结构主要包含如下目录：
 ## 撰写博客
 ### 编辑器
 推荐vscode，因为可以一边写markdown一边预览。
+
+> 我是用的是Typora，可以直接显示文章。真的很好用，强烈推荐。现在虽然收费了，但是之前的版本是可以继续免费试用的，不要更新就行。如果想要免费使用，可以下载老版本进行安装。
+
 ### 创建文章
 在_post文件夹新建一个markdown格式的文件，命名格式为：
 ```md
@@ -107,17 +116,21 @@ mathjax: true
 ### 发布文章
 文章保存到_post后，push到github远程仓库即可。
 
+> Windows电脑上有一个Github Desktop的app，是一个带GUI的Git工具。如果你不熟悉git指令的话可以用这个，挺好用的。
+
 
 ## 参考链接
 - [jekyll中文文档](http://jekyllcn.com/)
 - [jekyll-TeXt-theme中文文档](https://tianqi.name/jekyll-TeXt-theme/docs/zh/quick-start)  
-- [Github Pages + Jekyll 独立博客一小时快速搭建&上线指南](https://www.jianshu.com/p/7593508666f8)  
 - [Github+Jekyll 搭建个人网站详细教程](https://www.jianshu.com/p/9f71e260925d)  
 - [Jekyll 博客系列 - 01 快速入门(Youtube)](https://youtu.be/Zt_QzSbyDcw)
 
 ## 我遇到的问题（持续更新）
 > **Q:** 如何调大代码字体？  
->  **A:** 找到 _sass\common_reset.scss ，将里面 code 中 font-size-sm 改成 font-size
+>  **A:** 找到 _sass\common\_reset.scss ，将里面 code 中 font-size-sm（不是sm，是什么我忘记了） 改成 font-size
+
+> **Q:**怎么修改主题的皮肤颜色？
+> **A:** 找到 _sass\skins，打开你选择的主题的sass文件，里面是颜色信息。
 
 > **Q:** 怎么控制显示在主页的摘要内容？  
   **A:** 在文章摘要和正文中间加上 `<!--more-->` 
