@@ -8,6 +8,10 @@ modify_date: 2022-02-11
 cover: /assets/images/fern-leaf-1372477-1280x960.jpg
 aside:
   toc: true
+header:
+  type: overlay
+  theme: dark
+  background: 'linear-gradient(135deg, rgb(21, 81, 138), rgb(147, 15, 139))'
 ---
 
 Python爬虫学习，项目笔记。
