@@ -217,6 +217,11 @@ defaults:
       show_edit_on_github: true
       show_subscribe: true
       pageview: true
+      header:
+        type: overlay
+        theme: dark
+        background: 'linear-gradient(135deg, rgb(21, 81, 138), rgb(147, 15, 139))'
+
 
 
 
