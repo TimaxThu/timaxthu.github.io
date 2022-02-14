@@ -220,7 +220,7 @@ defaults:
       header:
         type: overlay
         theme: dark
-        background: 'linear-gradient(135deg, rgb(21, 81, 138), rgb(147, 15, 139))'
+        background: 'linear-gradient(135deg, rgb(239, 241, 254), rgb(104, 153, 253))'
 
 
 
