@@ -8,10 +8,6 @@ modify_date: 2022-02-11
 cover: /assets/images/fern-leaf-1372477-1280x960.jpg
 aside:
   toc: true
-header:
-  type: overlay
-  theme: dark
-  background: 'linear-gradient(135deg, rgb(21, 81, 138), rgb(147, 15, 139))'
 ---
 
 Python爬虫学习，项目笔记。
@@ -59,6 +55,34 @@ python使用urllib库获取页面
 ## 解析数据
 
 BeautifulSoup是一个很强大的
+
+
+
+正则表达式的常用操作字符
+
+| 操作符          | 说明                             | 实例                                    |
+| --------------- | -------------------------------- | --------------------------------------- |
+| `.`{:.info}     | 表示任何单个字符                 |                                         |
+| `[ ]`{:.info}   | 字符集，对单个字符给出取值范围   | [abc]表示a、b、c，[a-z]表示a到z单个字符 |
+| `[^ ]`{:.info}  | 非字符集，对单个字符给出排除范围 | [^abc]表示非a非b非的单个字符            |
+| `*`{:.info}     | 前一个字符0次或无限次扩展        | abc*表示ab、abc、abcc等                 |
+| `+`{:.info}     | 前一个字符1次或无限次扩展        | abc*表示abc、abcc、abccc等              |
+| `?`{:.info}     | 前一个字符0次或1次扩展           | abc?表示ab、abc                         |
+| `|`{:.info}     | 左右表达式任意一个               | abc\|def表示abc、def                    |
+| `{m}`{:.info}   | 扩展前一个字符m次                | ab{2}c表示abc、abbc                     |
+| `{m,n}`{:.info} | 扩展前一个字符m至n次(含n)        | ab{1,2}c表示abc、abbc                   |
+| `^`{:.info}     | 匹配字符串开头                   | ^abc表示abc且在一个字符串的开头         |
+| `$`{:.info}     | 匹配字符串结尾                   | abc$表示abc且在一个字符串的结尾         |
+| `( )`{:.info}   | 分组标记，内部只能用`|`操作符    | (abc)表示abc，(abc\|def)表示abc、def    |
+| `\d`{:.info}    | 数字，等价于[0-9]                |                                         |
+| `\w`{:.info}    | 单词字符，等价于[A-Za-z0-9_]     |                                         |
+
+
+
+
+
+
+
 
 
 
