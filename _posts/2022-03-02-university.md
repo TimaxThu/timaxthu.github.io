@@ -11,6 +11,21 @@ aside:
 
 
 
+# 总体上讲
+
+一、4个最为优秀的computer science Program是麻省理工大学MIT，斯坦福大学Stanford，加州伯克莱分校UC．Berkeley和**卡内基梅隆CMU**。这四家基本没什么争议，得到大家的广泛认可。
+二、6个其他前十的computer science：UIUC，康乃尔大学Cornell，**华盛顿大学U. of Washington**，普林斯顿大学Princeton，德州奥斯汀分校U. of Texas-Austin和威斯康星大学U. of Wisconsin-Madison，其中UIUC，Cornell，U．of Washington和UW－Madison几乎从未出过前十名。
+三、其他非常非常优秀的computer science：玛里兰大学U. of Maryland，加州拉斯韦加斯分校UCLA，布朗大学Brown，哈佛大学Harvard，耶鲁大学Yale，普渡大学Purdue，，密歇根大学U. of Michigan和滑铁卢Waterloo(加拿大)等等．
+
+
+
+
+# 卡内基梅隆大学CMU
+
+**卡内基·梅隆大学**（英语：Carnegie Mellon University，缩写为CMU）是一所位于美国[宾夕法尼亚州](https://zh.wikipedia.org/wiki/賓夕法尼亞州)[匹兹堡](https://zh.wikipedia.org/wiki/匹茲堡)的[研究型](https://zh.wikipedia.org/wiki/研究型大學)[私立大学](https://zh.wikipedia.org/wiki/私立大學)。
+
+
+
 
 
 # 华盛顿大学 UW
@@ -30,10 +45,6 @@ aside:
 # 哥伦比亚大学
 
 
-
-# 卡内基梅隆大学CMU
-
-**卡内基·梅隆大学**（英语：Carnegie Mellon University，缩写为CMU）是一所位于美国[宾夕法尼亚州](https://zh.wikipedia.org/wiki/賓夕法尼亞州)[匹兹堡](https://zh.wikipedia.org/wiki/匹茲堡)的[研究型](https://zh.wikipedia.org/wiki/研究型大學)[私立大学](https://zh.wikipedia.org/wiki/私立大學)。
 
 
 
