@@ -46,6 +46,15 @@ aside:
 
 
 
+<<<<<<< Updated upstream
+=======
+
+
+# 卡内基梅隆大学CMU
+
+**卡内基·梅隆大学**（英语：Carnegie Mellon University，缩写为CMU）是一所位于美国[宾夕法尼亚州](https://zh.wikipedia.org/wiki/賓夕法尼亞州)[匹兹堡](https://zh.wikipedia.org/wiki/匹茲堡)的[研究型](https://zh.wikipedia.org/wiki/研究型大學)[私立大学](https://zh.wikipedia.org/wiki/私立大學)。
+
+>>>>>>> Stashed changes
 
 
 # 南加州大学USC
@@ -54,7 +63,9 @@ aside:
 
 [【文章】被南加州大学（USC）计算硕士项目录取是怎样的体验？ - 知乎 (zhihu.com)](https://www.zhihu.com/question/266990773/answer/1610612694)
 
-据说这所大学是中国留学生留学时比较愿意选择的学校
+据说**南加州大学是中国留学生留学时比较愿意选择的学校**
+
+
 
 
 
