@@ -46,15 +46,18 @@ aside:
 
 
 
-<<<<<<< Updated upstream
-=======
+
 
 
 # 卡内基梅隆大学CMU
 
 **卡内基·梅隆大学**（英语：Carnegie Mellon University，缩写为CMU）是一所位于美国[宾夕法尼亚州](https://zh.wikipedia.org/wiki/賓夕法尼亞州)[匹兹堡](https://zh.wikipedia.org/wiki/匹茲堡)的[研究型](https://zh.wikipedia.org/wiki/研究型大學)[私立大学](https://zh.wikipedia.org/wiki/私立大學)。
 
->>>>>>> Stashed changes
+
+
+
+
+
 
 
 # 南加州大学USC
