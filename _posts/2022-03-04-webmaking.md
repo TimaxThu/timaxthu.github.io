@@ -34,6 +34,30 @@ strong：strong importance
 
 p代表
 
+标签：dl，dt和dd
+
+dl：description list
+
+dt：description terms
+
+dd：description definition
+
+
+
+
+
+<p>你好！欢迎访问我的激励网页！<a href="http://www.brainyquote.com/quotes/authors/c/confucius.html"><cite>孔子</cite></a>曰：</p>
+<blockquote cite="https://zh.wikipedia.org/zh-hans/孔子">
+  <p>譬如为山，未成一篑，止，吾止也。譬如平地，虽覆一篑，进，吾往也。</p>
+</blockquote>
+<p>要保持乐观，<q cite="http://www.affirmationsforpositivethinking.com/">不要说泄气的话</q>。（源自 <a href="http://www.affirmationsforpositivethinking.com/"><cite>Affirmations for Positive Thinking</cite></a>。）</p>
+
+
+
+cite干什么的？
+
+
+
 
 
 

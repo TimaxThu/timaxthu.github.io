@@ -23,8 +23,6 @@ baseurl : # does not include hostname
 title   : Gold Miner's Notebook
 description: > # this means to ignore newlines until "Language & timezone"
   不做打工人
-
-
 ## => Language and Timezone
 ##############################
 lang: # the language of your site, default as "en"
