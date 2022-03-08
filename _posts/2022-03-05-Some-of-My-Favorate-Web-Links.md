@@ -13,7 +13,7 @@ aside:
 
 ## 优秀的tutor网站
 
-【[Web 开发技术 | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/)】学习前端网页知识的网站
+【[Web 开发技术 - MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/)】学习前端网页知识的网站
 
 
 
