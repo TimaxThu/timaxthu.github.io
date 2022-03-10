@@ -2,16 +2,32 @@
 layout: article
 title: 大学信息整理
 key: 20220302
-tags: English 留学
+tags: English
 pageview: false
 modify_date: 2022-03-02
 aside:
   toc: true
 ---
 
+2022年的2月，我有了出国的想法。我的愿望很强烈，也切实的去努力了。但是最终因为资金的原因不得不放弃。虽然无论如何我都认为出国是既能锻炼自己，同时也能获得高薪酬工作的一个好主意，但可能生活就是这样子吧，愿望永远无法实现。
+
+<!--more-->
+
+着篇Post最初是记录我寻找的留学信息的，后来我又将很多国内读研的信息也记录了下来。希望对你有帮助。
+
+# 国内读研
 
 
-# 总体上讲
+
+
+
+
+
+
+
+# 留学
+
+## 总体上讲
 
 一、4个最为优秀的computer science Program是麻省理工大学MIT，斯坦福大学Stanford，加州伯克莱分校UC．Berkeley和**卡内基梅隆CMU**。这四家基本没什么争议，得到大家的广泛认可。
 二、6个其他前十的computer science：UIUC，康乃尔大学Cornell，**华盛顿大学U. of Washington**，普林斯顿大学Princeton，德州奥斯汀分校U. of Texas-Austin和威斯康星大学U. of Wisconsin-Madison，其中UIUC，Cornell，U．of Washington和UW－Madison几乎从未出过前十名。
@@ -20,7 +36,7 @@ aside:
 
 
 
-# 卡内基梅隆大学CMU
+## 卡内基梅隆大学CMU
 
 **卡内基·梅隆大学**（英语：Carnegie Mellon University，缩写为CMU）是一所位于美国[宾夕法尼亚州](https://zh.wikipedia.org/wiki/賓夕法尼亞州)[匹兹堡](https://zh.wikipedia.org/wiki/匹茲堡)的[研究型](https://zh.wikipedia.org/wiki/研究型大學)[私立大学](https://zh.wikipedia.org/wiki/私立大學)。
 
@@ -28,7 +44,7 @@ aside:
 
 
 
-# 华盛顿大学 UW
+## 华盛顿大学 UW
 
 华盛顿大学（University of Washington），简称UWashington 或UW。位于西海岸北部华盛顿州西雅图市，**西雅图有很多科技公司**。但是，**WU似乎不招CS专业MS硕士留学生**，只招收PhD。（MS: Master of Science，理学硕士）
 
@@ -36,20 +52,20 @@ aside:
 
 
 
-# 圣路易斯华盛顿大学 WUSTL
+## 圣路易斯华盛顿大学 WUSTL
 
 关于安全问题：圣撸的治安一直是所有入读的同学去之前很关注的问题，抛出地理位置暂时不提（地理位置确实不好，如果你是CS方向的找工作来的大厂不多，EE和ME到时波音每年都来捞人），治安被误会的是“东圣”地区，但是圣撸所在的university city是很靠很靠北面，平均治安情况远高于美国平均水平，并且PHD的学生基本上你要每周1-4很老板在一起混，或者pizza活动，也根本没有像本科和master那么多学生大半夜party的时间
 
 
 
-# 哥伦比亚大学
+## 哥伦比亚大学
 
 
 
 
 
 
-# 卡内基梅隆大学CMU
+## 卡内基梅隆大学CMU
 
 **卡内基·梅隆大学**（英语：Carnegie Mellon University，缩写为CMU）是一所位于美国[宾夕法尼亚州](https://zh.wikipedia.org/wiki/賓夕法尼亞州)[匹兹堡](https://zh.wikipedia.org/wiki/匹茲堡)的[研究型](https://zh.wikipedia.org/wiki/研究型大學)[私立大学](https://zh.wikipedia.org/wiki/私立大學)。
 
@@ -60,7 +76,7 @@ aside:
 
 
 
-# 南加州大学USC
+## 南加州大学USC
 
 **南加州大学**（英语：University of Southern California，缩写：**USC**或**SC**），简称**南加大**，也译作**南加利福尼亚大学**，位于美国[加州](https://zh.wikipedia.org/wiki/加州)(State of California)[洛杉矶](https://zh.wikipedia.org/wiki/洛杉磯)市中心.
 
@@ -72,7 +88,7 @@ aside:
 
 
 
-# UCLA
+## UCLA
 
 
 
@@ -82,7 +98,7 @@ aside:
 
 
 
-# 杜克大学
+## 杜克大学
 
 杜克大学官方网站：[Applying for CS | Duke Computer Science](https://www.cs.duke.edu/graduate/apply)
 
@@ -90,7 +106,7 @@ aside:
 
 
 
-# 加州理工学院 Caltech
+## 加州理工学院 Caltech
 
 加州理工学院(California Institute of Technology)，简称Caltech，学院和大学的区别下文有介绍。
 
@@ -98,7 +114,7 @@ aside:
 
 
 
-# 治安
+## 治安
 
 ## [美国十大最危险的城市](https://liuxue.hujiang.com/abroad/life/p380446/)
 
@@ -116,7 +132,7 @@ aside:
 
 
 
-# 资金证明
+
 
 
 
