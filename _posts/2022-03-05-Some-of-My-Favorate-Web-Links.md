@@ -37,13 +37,21 @@ aside:
 
 
 
+## 高质量YouTuber
+
+【[小Lin说 - YouTube](https://www.youtube.com/c/Lindsay说)】Lin姐我就不多介绍了，北大本科+哥大研究生+JP Morgan投行的经历已经充分证明了她的实力。她的视频主要关于金融知识&公司或个人的传奇故事&求职经验，并且视频真的很有意思！
+
+【[Kaimei张开眉 - YouTube](https://www.youtube.com/channel/UC_lUUDorIwp6JWFNvDsse8g)】这个姐姐也很厉害，讲解的知识也是金融理财投资&提升自己相关内容。属于收藏的宝藏型YouTuber。
+
+【[异界番茄说 - YouTube](https://www.youtube.com/channel/UCN8o549WO8d5ihnmv320tUw)】主要讲解**高阶**的投资知识，根据他的视频推断，应该是一位出生在湾区，现在在纽约工作的技术大佬。视频介绍的内容专业性很强，包括期权，对冲，量化投资等等。作为新手可以当作扩展知识面来看，但并不建议过于急切地去尝试。
 
 
 
 
 
 
-## 其他
+
+## 其他工具
 
 【[NCM在线转换MP3](http://ncm.miidj.com/)】可以免费将酷狗&网易云下载的ncm等**加密格式的音乐文件**解密为**普通格式音乐文件**
 

@@ -1,19 +1,19 @@
 ---
 layout: article
-title: C++ Experiment 1
+title: My Experiments
 key: 20220314
 tags: English
 pageview: false
-modify_date: 2022-03-14
+modify_date: 2022-03-27
 aside:
   toc: true
 ---
 
-<!--more-->
+简单记录下我动手写过的一些代码。<!--more-->
 
 
 
-# zh-CN Edition
+# 2022.03.18
 
 ## 概述
 
@@ -268,10 +268,6 @@ int main() {
 
 
 
-# en-US Edidtion
-
-auto translated by google :)
-{:.warning}
 
 
 
@@ -279,13 +275,6 @@ auto translated by google :)
 
 
 
-
-
-
-
-
-
-# Reference
 
 
 
