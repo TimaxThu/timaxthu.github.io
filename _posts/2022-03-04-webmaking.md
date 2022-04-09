@@ -17,6 +17,12 @@ aside:
 
 
 
+* 先记一个知识点，在Mac上想通过pip安装其他python包怎么办？使用命令：
+
+  ```shell
+  $ python3 -m pip install 包名
+  ```
+
 # HTML
 
 ## 基础概念
