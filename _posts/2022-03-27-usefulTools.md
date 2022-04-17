@@ -52,7 +52,8 @@ $ ffmpeg -i "/Users/letme/Downloads/rose1.webm"  "/Users/letme/Downloads/rose12.
 
 * [FFmpeg官方文档](https://ffmpeg.org/ffmpeg.html)
 
-
+* [FFmpeg 视频处理入门教程 - 阮一峰的网络日志 (ruanyifeng.com)](https://www.ruanyifeng.com/blog/2020/01/ffmpeg.html)
+* 
 
 # [Real-ESRGAN：让照片更清晰](https://github.com/xinntao/Real-ESRGAN)
 

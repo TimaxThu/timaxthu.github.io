@@ -1,74 +1,3 @@
----
-layout: article
-title: 网页制作笔记
-key: 20220304
-tags: 计算机
-pageview: false
-modify_date: 2022-03-04
-aside:
-  toc: true
----
-
-
-
-这里记录了学习网页制作的笔记，包括HTML、css、js三个部分，主要参考教程为[Web 开发技术文档 - MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/)。
-
-<!--more-->
-
-
-
-* 先记一个知识点，在Mac上想通过pip安装其他python包怎么办？使用命令：
-
-  ```shell
-  $ python3 -m pip install 包名
-  ```
-
-# 前端
-
-## 基础概念
-
-* 元素
-* 标签
-
-
-
-标签：
-
-em代表emphasize
-
-strong：strong importance
-
-p代表
-
-标签：dl，dt和dd
-
-dl：description list
-
-dt：description terms
-
-dd：description definition
-
-
-
-
-
-<p>你好！欢迎访问我的激励网页！<a href="http://www.brainyquote.com/quotes/authors/c/confucius.html"><cite>孔子</cite></a>曰：</p>
-<blockquote cite="https://zh.wikipedia.org/zh-hans/孔子">
-  <p>譬如为山，未成一篑，止，吾止也。譬如平地，虽覆一篑，进，吾往也。</p>
-</blockquote>
-<p>要保持乐观，<q cite="http://www.affirmationsforpositivethinking.com/">不要说泄气的话</q>。（源自 <a href="http://www.affirmationsforpositivethinking.com/"><cite>Affirmations for Positive Thinking</cite></a>。）</p>
-
-
-
-cite干什么的？
-
-把这个加入到你的js文件中，他就可以拥有蜘蛛网动态效果
-
-```javascript
-//立即执行函数
-//!的作用是告诉javascript引擎这是一个函数表达式，不是函数声明，()、！、+、-等运算符都能实现这个作用，不过()是最安全的
-//在!function(){}后面加上()会立即调用这个函数
-//这样做可以模仿一个私有作用域，这样html文件引用多个js文件时便不会造成变量冲突
 !
 function() {
     //canvas元素相关
@@ -217,119 +146,51 @@ function() {
     },
     100)
 } ();
-```
-
-* [html5 canvas实现背景鼠标连线动态效果代码解析 (tddx.net)](https://www.tddx.net/post-485.html)
-
-* [奇思妙想 CSS 文字动画 - SegmentFault 思否](https://segmentfault.com/a/1190000039362755)
-
-
-
-# Tomcat
-
-## 配置
-
-1. 打开[Apache Tomcat官网](http://tomcat.apache.org)，点击左侧的downloads，选择对应的版本，选择`Core->tar.gz`
-
-2. 解压下载后的包到本地路径下，如路径为：/Users/用户名/tomcat
-
-3. 打开终端，执行命令`cd /Users/用户名/tomcat/bin`，进入到tomcat的bin目录下
-
-4. 启动tomcat，执行命令：
-
-   ```shell
-   $ ./startup.sh
-   ```
-   （如果出现错误：“Permission denied”操作失败，缺少权限，输入命令`sudo chmod 755 *.sh` 赋予超级管理员权限）
-
-5. 打开浏览器，输入网址 [`http://localhost:8080/`](http://localhost:8080/) ，如果出现一只三角猫，表示tomcat安装成功。
-
-5. 关闭Tomcat时，在bin目录下，执行命令：`./shutdown.sh`
-
-
-
-
-
-请求和响应
-
-请求的GET和POST方法一个更安全（post），一个更高效（get）
-
-
-
-发现了typora的快捷键：shift+tab可以让代码空格向前调整
-
-
-
-
-
-## tomcat是什么
-
-tomcat是一个**web容器**，用来装载你的Javaweb程序。你的jsp/servlet程序需要运行在Web容器上
-
-也可以说tomcat是计算机上运行的服务器。你想访问计算机X上的文件B，B必须放在Web服务器（Tomcat）里才能被访问。
-
-Web容器有很多种，JBoss、WebLogic等等，Tomcat是其中一种。Tomcat免费开源，由Apache，Sun和其它一些公司及个人共同开发而成。由于有了Sun的参与和支持，最新的Servlet和Jsp规范总能在Tomcat中得到体现。
-
-==那么问题来了，tomcat内部结构是什么样子的呢？==
-
-Tomcat中的应用程序是一个WAR（WebArchive）文件（war包）。也就是在tomcat根目录下面webapps文件夹中，每一个文件夹都是一个war包，一个项目。一般的war包格式为：
-
-通常其根目录下包含有Html和Jsp文件或者包含这两种文件的目录，另外还会有一个 `WEB-INF` 目录。通常在 `WEB-INF` 目录下有一个 `web.xml` 文件和一个classes目录， `web.xml` 是这个应用的配置文件，而classes目录下则包含编译好的Servlet类和Jsp或Servlet所依赖的其它类（如JavaBean）。通常这些所依赖的类也可以打包成JAR放到 `WEB-INF` 下的lib目录下，当然也可以放到系统的CLASSPATH中，但那样移植和管理起来不方便。
-
-（Tomcat不仅仅是一个Servlet容器，它也具有传统的Web服务器的功能：处理Html页面。但是与Apache相比，它的处理静态Html的能力就不如Apache。我们可以将Tomcat和Apache集成到一块，让Apache处理静态Html，而Tomcat处理Jsp和Servlet。这种集成只需要修改一下Apache和Tomcat的配置文件即可。）
-
-
-
-
-
-参考：
-
-* [tomcat到底是干嘛的 - Cherishforchen - 博客园 (cnblogs.com)](https://www.cnblogs.com/cherishforchen/p/10921792.html)
-
-
-
-# Servlet
-
-servletcontext可以保存一些东西**共享数据**
-
-
-
-
-
-
-
-
-
-
-
-# Maven
-
-Maven是一个**Java项目管理工具**。maven主要做了两件事情：
-
-- 统一开发规范与工具
-
-- 统一管理jar包
-
-  **Maven工程首先会从本地仓库中获取jar包，当无法获取指定jar包时，本地仓库会从远程仓库（中央仓库）中下载jar包，并放入本地仓库以备将来使用**
-
-
-
-参考：
-
-* [Maven详解 - 独具匠心 - 博客园 (cnblogs.com)](https://www.cnblogs.com/hongwz/p/5456578.html)
-
-
-
-
-
-# Java连接Mysql
-
-Java连接mysql需要`import java.sql.*;`，同时需要导入mysql官方链接java的驱动（实际上就是一个jar包）。
-
-我的mysql是在官网上下载的（没有在homebrew下载是因为觉得homebrew稍微麻烦，但实际上好像也没麻烦多少）。mysql下载之后如果想要在终端正常使用mysql，还需要在`~/.zshrc`下添加一个路径（我这次不添加就显示找不到mysql，之前添没添加过没有印象了）。
-
-
-
-
-
-* [(22条消息) JavaWeb中的表单提交和超链接请求传递参数_一生所Ai的博客-CSDN博客_javaweb 表单提交](https://blog.csdn.net/qq_40180411/article/details/82343854)
+//这是蜘蛛网效果的函数，如果不放在最上面，会在一些界面失效
+
+var themebutton = document.getElementById("themebut");
+var theme = document.getElementById("theme");
+
+var lastphoto = document.getElementById("lastphoto");
+var nextphoto = document.getElementById("nextphoto");
+
+themebutton.onclick = function() {
+
+    if (theme.className == "light") {
+        theme.className = "dark";
+        theme.setAttribute("href","./styledark.css");
+    } else {
+        theme.className = "light";
+        theme.setAttribute("href","./style.css");
+    }
+
+}
+
+lastphoto.onclick = function() {
+    var photosrc = document.getElementById("photosrc").getAttribute("src").toString();
+    var page = parseInt(photosrc.slice(6));//如果字符串的第一个字符不能转化为数字（后面跟着数字的正负号除外），返回NaN。
+    if (page-1 > 0) {
+        page = page-1;
+        var newsrc = "./img/" + page + ".jpeg";
+        // window.alert(newsrc);
+        document.getElementById("photosrc").setAttribute("src",newsrc);
+    } 
+    
+
+}
+
+nextphoto.onclick = function() {
+    var photosrc = document.getElementById("photosrc").getAttribute("src").toString();
+    var page = parseInt(photosrc.slice(6));
+    if (page+1 < 12) {
+        page = page+1;
+        var newsrc = "./img/" + page + ".jpeg";
+        document.getElementById("photosrc").setAttribute("src",newsrc);
+    } 
+}
+
+
+//立即执行函数
+//!的作用是告诉javascript引擎这是一个函数表达式，不是函数声明，()、！、+、-等运算符都能实现这个作用，不过()是最安全的
+//在!function(){}后面加上()会立即调用这个函数
+//这样做可以模仿一个私有作用域，这样html文件引用多个js文件时便不会造成变量冲突
