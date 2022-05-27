@@ -333,3 +333,20 @@ Java连接mysql需要`import java.sql.*;`，同时需要导入mysql官方链接j
 
 
 * [(22条消息) JavaWeb中的表单提交和超链接请求传递参数_一生所Ai的博客-CSDN博客_javaweb 表单提交](https://blog.csdn.net/qq_40180411/article/details/82343854)
+
+
+
+
+
+
+
+## LayUI
+
+* [Layui 管理界面大框架布局 - 在线演示 (itze.cn)](https://layui.itze.cn/demo/admin.html)
+
+* [Layui 栅格系统与后台框架布局 (itze.cn)](https://layui.itze.cn/doc/element/layout.html#admin)
+
+
+
+<h1 style="background: #E3C5FD;">fuck you</h1>
+
