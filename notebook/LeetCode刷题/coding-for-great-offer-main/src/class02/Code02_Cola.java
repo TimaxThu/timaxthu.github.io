@@ -13,6 +13,8 @@ public class Code02_Cola {
 	 * 所以是总共需要操作8次金额投递操作 样例输入 2 1 4 3 250 样例输出 8
 	 */
 
+  // fixme 这道题注意，代码写的是10,50,100 面额硬币的枚数分别是 a,b,c，有一部分注释标反了
+
 	// 暴力尝试，为了验证正式方法而已
 	public static int right(int m, int a, int b, int c, int x) {
 		int[] qian = { 100, 50, 10 };
@@ -78,9 +80,12 @@ public class Code02_Cola {
 			// 当前的面值付出一些钱+之前剩下的钱，此时有可能凑出一瓶可乐来
 			// 那么当前面值参与搞定第一瓶可乐，需要掏出多少张呢？就是curQianFirstBuyZhang
 			int curQianFirstBuyZhang = (x - preQianRest + qian[i] - 1) / qian[i];
+      // (可乐的单价-之前剩下的钱)/当前面值，向上取整（Coding技巧——向上取整）
+      // a/x 向上取整技巧：(a+x-1)/x
+
 			if (zhang[i] >= curQianFirstBuyZhang) { // 如果之前的钱和当前面值的钱，能凑出第一瓶可乐
 				// 凑出来了一瓶可乐也可能存在找钱的情况，
-				giveRest(qian, zhang, i + 1, (preQianRest + qian[i] * curQianFirstBuyZhang) - x, 1);
+				giveRest(qian, zhang, i + 1, (preQianRest + qian[i] * curQianFirstBuyZhang) - x, 1);// 买完第一瓶找的零，调整后面的钱
 				puts += curQianFirstBuyZhang + preQianZhang;
 				zhang[i] -= curQianFirstBuyZhang;
 				m--;
@@ -95,7 +100,7 @@ public class Code02_Cola {
 			int curQianBuyOneColaZhang = (x + qian[i] - 1) / qian[i];
 			// 用当前面值的钱，一共可以搞定几瓶可乐
 			int curQianBuyColas = Math.min(zhang[i] / curQianBuyOneColaZhang, m);
-			// 用当前面值的钱，每搞定一瓶可乐，收货机会吐出多少零钱
+			// （单次找的钱）用当前面值的钱，每搞定一瓶可乐，收货机会吐出多少零钱
 			int oneTimeRest = qian[i] * curQianBuyOneColaZhang - x;
 			// 每次买一瓶可乐，吐出的找零总钱数是oneTimeRest
 			// 一共买的可乐数是curQianBuyColas，所以把零钱去提升后面几种面值的硬币数，
@@ -121,6 +126,61 @@ public class Code02_Cola {
 		}
 	}
 
+
+
+  // 要买的可乐数量，m
+  // 100元有a张
+  // 50元有b张
+  // 10元有c张
+  // 可乐单价x
+  static int getNum(int m, int a, int b, int c, int x) {
+    int restMoneyZhang = 0;//剩余的钱数的张数
+    int restMoneyValue = 0;//剩余的钱数的价值
+    int result = 0;// 购买可乐一共需要投入的硬币次数
+    int[] qian = {100, 50, 10};
+    int[] zhang = {c, b, a};
+    for (int i = 0; i < 3 && m != 0; i++) {
+      // 先考虑第一瓶可乐，由剩余的钱和当前的钱一同购买
+      if (x <= restMoneyValue + qian[i] * zhang[i]) {//可以买第一瓶可乐（restMoneyValue一定小于x）
+        m--;    // 购买一瓶可乐
+        int buyColaMoneyZhang = (x - restMoneyValue + qian[i] - 1) / qian[i];   // 需要当前钱多少张
+        zhang[i] -= buyColaMoneyZhang;  // 减掉当前钱购买可乐的张数
+        result = result + buyColaMoneyZhang + restMoneyZhang;   // 更改结果值
+        restMoneyValue = restMoneyZhang = 0;    // 把剩余的钱清零
+        dealRestMoneyZhang(qian, zhang, i, x, 1); // 更改之后的钱数量
+      } else {//不能买第一瓶可乐
+        restMoneyZhang += zhang[i];
+        restMoneyValue += zhang[i] * qian[i];
+        continue;
+      }
+      //考虑后面的可乐
+      int curBuyOneColaZhang = (x + qian[i] - 1) / qian[i];
+      int curBuyTotColaNum = Math.min(m, zhang[i] / curBuyOneColaZhang); // 当前买可乐的数量
+      m -= curBuyTotColaNum;
+      result += curBuyOneColaZhang * curBuyTotColaNum;
+      int curMoneyRestZhang = zhang[i] - curBuyOneColaZhang * curBuyTotColaNum;
+      restMoneyZhang += curMoneyRestZhang;
+      restMoneyValue += curMoneyRestZhang * qian[i];
+      dealRestMoneyZhang(qian, zhang, i, x, curBuyTotColaNum);
+
+    }
+    return m == 0 ? result : -1;
+
+
+  }
+
+  //用第i号钱币买了可乐，可乐单价x，一共买了times瓶
+  static void dealRestMoneyZhang(int[] qian, int[] zhang, int i, int x, int times) {
+    int curZhang = (x + qian[i] - 1) / qian[i];
+    int restMoneyValue = curZhang * qian[i] - x;
+    for (i = i + 1; i < 3; i++) {
+      int curZhaoZhang = restMoneyValue / qian[i];
+      restMoneyValue -= curZhaoZhang * qian[i];
+      zhang[i] += curZhaoZhang * times;
+    }
+  }
+
+
 	public static void main(String[] args) {
 		int testTime = 1000;
 		int zhangMax = 10;
@@ -135,7 +195,8 @@ public class Code02_Cola {
 			int c = (int) (Math.random() * zhangMax);
 			int x = ((int) (Math.random() * priceMax) + 1) * 10;
 			int ans1 = putTimes(m, a, b, c, x);
-			int ans2 = right(m, a, b, c, x);
+			//int ans2 = right(m, a, b, c, x);
+      int ans2 = getNum(m, a, b, c, x);
 			if (ans1 != ans2) {
 				System.out.println("int m = " + m + ";");
 				System.out.println("int a = " + a + ";");

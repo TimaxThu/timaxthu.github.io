@@ -175,19 +175,107 @@ Button {
 
 ## Spacer
 
-```
+```swift
 // 尽可能占用更多空间
 Spacer()
 ```
 
 
 
+# 参考代码
+
+```swift
+//
+//  ContentView.swift
+//  Memorize
+//
+//  Created by LetME on 2022/7/3.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    let emojis = ["✈️", "🚄", "⛴", "🚗", "🚙", "🚛", "🛺", "🏍", "🛴", "🚲", "🚊", "🚉", "💺", "🛰", "🚀", "🚤", "🛥", "🚧", "🏰", "🚏", "🚥", "⚓️", "🪝", "⛽️"]
+    @State var emojiCount = 10
+    
+    var body: some View {
+        VStack {
+            Text("Memorize").font(.largeTitle)
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 70))]) {
+                    ForEach(emojis[0..<emojiCount], id: \.self) { emoji in
+                        CardView(content: emoji).aspectRatio(2/3, contentMode: .fit)
+                    }
+                }
+            }
+            .foregroundColor(.orange)
+            Spacer()
+            HStack {
+                remove
+                Spacer()
+                Text("Card")
+                Spacer()
+                add
+            }
+            .font(.largeTitle)
+            .padding(.horizontal)
+        }
+        .padding()
+
+    }
+    var remove: some View {
+        Button(action: {
+            if emojiCount > 1 {
+                emojiCount -= 1
+            }
+        }, label: {
+            Image(systemName: "minus.square.fill")
+        })
+    }
+    var add: some View {
+        Button {
+            if emojiCount < emojis.count {
+                emojiCount += 1
+            }
+        } label: {
+            Image(systemName: "plus.square.fill")
+        }
+    }
+}
 
 
-<font size = 10>􁊘􀉚􀍣􀐴􀉮􁊙</font>
+struct CardView: View {
+    @State var isFaceUp = true
+    var content: String
+    var body: some View {
+        ZStack {
+            let shape = RoundedRectangle(cornerRadius: 18)
+            if isFaceUp { // 可以在试图中有 if else 判断
+                shape.foregroundColor(.white)
+                shape.strokeBorder(lineWidth: 4)
+                Text(content).font(.largeTitle)
+            } else {
+                shape.fill()
+            }
+        }
+        .onTapGesture {
+            isFaceUp = !isFaceUp
+        }
+    }
+}
 
-<font size = 10>􁊘􀉚􀍣􀐵􀉭􁊙</font>
 
-<font size = 10>􁊘􀉚􀍤􀐴􀉭􁊙</font>
 
-<font size = 10>􁊘􀉛􀍣􀐴􀉭􁊙</font>
+
+// 这个是右侧preview的代码
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .preferredColorScheme(.dark)
+//        ContentView()
+//            .preferredColorScheme(.light)
+    }
+}
+
+```
+
