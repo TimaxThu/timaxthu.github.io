@@ -200,6 +200,10 @@ exclude:
   - /vendor
 
 
+collections:
+  java:
+    output: true
+
 
 defaults:
   ## posts
@@ -207,7 +211,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: 文章
+      layout: article
       sharing: true
       license: true
       aside:

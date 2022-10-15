@@ -3,7 +3,7 @@ header:
     url: /archive.html
 
   - titles: Java
-    url: /javaReader.md
+    url: /javaReader.html
     key: java
 
   - titles: 关于
