@@ -11,20 +11,21 @@ aside:
 
 搭建本博客的经验
 
-注意：本篇文章转载于[Yuleii的博客——**Yulei's Sandbox**](https://yuleii.github.io/2020/06/09/build-blog-with-github-pages-and-jekyll.html)，**并进行了补充**。本文章仅用于自己学习，若有侵权行为，请通过邮箱联系我，我会立刻将文章删除。
-{:.warning}
-
 <!--more-->
 
 
 
 
 ## 创建gitpage仓库
-在github上创建一个新的仓库，Repository name 填your_user_name.github.io, 例如我的仓库名是 yuleii.github.io。创建成功后，在浏览器里输入 https://yuleii.github.io/ 这个url就可以访问了。
+在github上创建一个新的仓库，Repository name 填your_user_name.github.io, 例如我的仓库名是 timaxthu.github.io。创建成功后，在浏览器里输入 https://timaxthu.github.io/ 这个url就可以访问了。
 
 ## 选一个主题
 ### 主题网站
 [jekyllthemes](http://jekyllthemes.org/)有很多免费主题可以挑选。我最喜欢[jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme)这个主题，页面简洁，有很多个性化的配置，还有非常详细的中英文档。
+
+> 主题仓库：https://github.com/kitian616/jekyll-TeXt-theme/
+>
+> 
 
 ### 主题下载
 我的办法是把主题克隆到本地，删除原有的git文件，再与自己的仓库关联起来（但建议用[jekyll-TeXt-theme中文文档](https://tianqi.name/jekyll-TeXt-theme/docs/zh/quick-start)推荐的fork方式。）
@@ -143,3 +144,11 @@ mathjax: true
 
 > **Q:** 为什么在_config.yml修改了配置不在本地实时预览时显示   
 > **A:** 修改了_config.yml的内容需要重启实时预览才能显示
+
+
+
+
+
+# references
+
+* 本篇文章由[Yuleii的博客——**Yulei's Sandbox**](https://yuleii.github.io/2020/06/09/build-blog-with-github-pages-and-jekyll.html)修改完成。若有侵权行为，请通过邮箱联系我，我会立刻将文章删除。
