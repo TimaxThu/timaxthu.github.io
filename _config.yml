@@ -20,10 +20,10 @@ text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate"
 highlight_theme: tomorrow-night-blue # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : 靳哥亡命天涯
+title   : 靳哥亡命天涯 🌌
 description: > # this means to ignore newlines until "Language & timezone"
   看博客，我只看靳哥亡命天涯，爱你呦😘
-## => Language and Timezone
+## => Language and Timezone3
 ##############################
 lang: # the language of your site, default as "en"
 timezone: Asia/Shanghai # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values

@@ -34,17 +34,4 @@ key: page-about
 
 
 
-![Timax](https://raw.githubusercontent.com/TimaxThu/timaxthu.github.io/master/pictures/about.jpg){:.shadow.rounded width="250"}
-
-你好，我是一名**计算机**相关专业的本科生。同时，我对**金融**相关的知识也较感兴趣。我的[博客](https://timaxthu.github.io/)会分享一些文章，内容包括：
-
-* 计算机相关专业知识
-* 金融，财务知识等其他领域我感兴趣并认为有用的内容
-* 我自己剪辑的视频，或认为有趣的视频
-* Moments，每日的动态
-
-
-
-
-
-如果你需要联系我，可以给我发`邮件`。
+但行好事，莫问前程。
