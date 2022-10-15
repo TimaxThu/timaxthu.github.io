@@ -26,12 +26,7 @@ titles:
 key: page-about
 ---
 
+![about](https://github.com/Yuleii/Yuleii.github.io/raw/master/pictures/about.JPG){:.shadow.rounded width="200"}
+### Hi, I'm Yulei.
 
-
-
-
-
-
-
-
-但行好事，莫问前程。
+I'm a master economics student at Bonn University. My blog is where I learn out loud. I write [posts](https://yuleii.github.io/archive.html) about things I find interesting, things I'm working on, or about problems I've faced with the solution I found.
