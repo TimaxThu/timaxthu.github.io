@@ -25,7 +25,7 @@ description: > # this means to ignore newlines until "Language & timezone"
   看博客，我只看靳哥亡命天涯，爱你呦😘
 ## => Language and Timezone3
 ##############################
-lang: # the language of your site, default as "en"
+lang: zh-Hans # the language of your site, default as "en"
 timezone: Asia/Shanghai # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 
@@ -219,7 +219,19 @@ defaults:
       #   type: overlay
       #   theme: dark
       #   background: 'linear-gradient(135deg, rgb(239, 241, 254), rgb(104, 153, 253))'
-
+  - scope:
+      path: "java"
+    values:
+      layout: article
+      nav_key: java
+      sidebar:
+        nav: java
+      license: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_subscribe: true
+      pageview: true
 
 
 
